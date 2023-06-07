@@ -1,8 +1,8 @@
 
 function App() {
   return (
-    <div className="">
-      <h2 className="underline nav-text">
+    <div className="App">
+      <h2 className="text-2xl">
         Hello World
       </h2>
     </div>
