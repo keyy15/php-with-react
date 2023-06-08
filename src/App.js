@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from '../src/pages/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Content from './components/Content';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <Content />
           <Routes>
             <Route path="/" exact component={Home} />
           </Routes>
