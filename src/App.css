@@ -2,9 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-text{
-  color: blue;
-}
-.test{
-  color: red;
-}
