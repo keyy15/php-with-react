@@ -1,8 +1,11 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Menu from './pages/Menu';
 import Home from '../src/pages/Home';
+import About from './pages/About';
+import Contact from '../src/components/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Content from './components/Content';
 
 
 function App() {
@@ -10,10 +13,13 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Content />
           <Routes>
-            <Route path="/" exact component={Home} />
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
+          <Footer />
       </Router>
     </div>
   );
